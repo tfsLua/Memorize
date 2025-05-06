@@ -5,7 +5,7 @@ Jogo da memória em C, onde temos que memorizar os números apresentados pelo pr
 1. Clone este repositório:
    ```sh
 https://github.com/tfsLua/Memorize
-      ```
+      ```sh
 3. Navegue até o diretório do projetO
 gcc jogo_memoria.c -o jogo_memoria
 
