@@ -11,3 +11,10 @@ gcc jogo_memoria.c -o jogo_memoria
 3. Compile o arquivo :
 
 4. Execute o arquivo
+
+
+**Autores**
+Mariana Ferreira [@mwndrly]
+Priscila Maciel [@PriscilaMdeLima]
+Thaissa Fernandes [@tfsLua]
+João Lira [@joaosanli]
