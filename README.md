@@ -1,3 +1,7 @@
+Projeto da disciplina: Programação Imperava e Funcional
+Instituição de ensino: Cesar School
+Profº Diego de Freitas
+
 
 # Memorize
 Jogo da memória em C, onde temos que memorizar os números apresentados pelo programa, e informa-los corretamente quando perguntado, a cada acerto mais um número e adicionado a próxima rodada, o jogo continua sendo executado até o jogador errar, e ao final da rodada o programa apresenta um ranking.
