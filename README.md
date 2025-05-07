@@ -6,7 +6,7 @@ Jogo da memória em C, onde temos que memorizar os números apresentados pelo pr
 
 /Memorize
 
-├── CLI/
+├── cli-lib/
 
 │   ├── cligfx.h
 
