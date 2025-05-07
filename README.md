@@ -10,7 +10,7 @@ Jogo da memória em C, onde temos que memorizar os números apresentados pelo pr
    ```
 2. Navegue até o diretório do projeto:
    ```sh
-   
+   https://github.com/tfsLua/Memorize
    ```
 3. Compile o arquivo Java
    ```sh
