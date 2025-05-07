@@ -17,19 +17,15 @@ include/cli-lib/: Biblioteca cli-lib.
 ranking.txt: Arquivo onde os melhores desempenhos são salvos.
 
 
-1. Clone este repositório:
-   ```sh
-     
-   ```
-2. Navegue até o diretório do projeto:
+1. Navegue até o diretório do projeto:
    ```sh
    https://github.com/tfsLua/Memorize
    ```
-3. Compile o arquivo
+2. Compile o arquivo
    ```sh
    cd gcc jogo_memoria.c -o jogo_memoria
    ```
-4. Execute o arquivo
+3. Execute o arquivo
    ```sh 
    jogo_memoria.c
    ```
