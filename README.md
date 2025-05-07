@@ -17,6 +17,9 @@ include/cli-lib/: Biblioteca cli-lib.
 ranking.txt: Arquivo onde os melhores desempenhos são salvos.
 
 
+**Instruções Compilar e Executar**
+
+
 1. Navegue até o diretório do projeto:
    ```sh
    https://github.com/tfsLua/Memorize
