@@ -10,16 +10,11 @@ Jogo da memória em C, onde temos que memorizar os números apresentados pelo pr
 
 **Estrutura do projeto:**
 
-/Memorize
+src/: Código-fonte principal.
 
-├── cli-lib/
+include/cli-lib/: Biblioteca cli-lib.
 
-│   ├── cligfx.h
-
-│   └── cliinput.h
-
-└── jogo_memoria.c
-
+ranking.txt: Arquivo onde os melhores desempenhos são salvos.
 
 
 1. Clone este repositório:
@@ -30,7 +25,7 @@ Jogo da memória em C, onde temos que memorizar os números apresentados pelo pr
    ```sh
    https://github.com/tfsLua/Memorize
    ```
-3. Compile o arquivo Java
+3. Compile o arquivo
    ```sh
    cd gcc jogo_memoria.c -o jogo_memoria
    ```
