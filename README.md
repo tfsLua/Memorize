@@ -6,15 +6,15 @@ Jogo da memória em C, onde temos que memorizar os números apresentados pelo pr
 
 1. Clone este repositório:
    ```sh
-     gcc jogo_memoria.c -o jogo_memoria
+     
    ```
 2. Navegue até o diretório do projeto:
    ```sh
-   cd gcc jogo_memoria.c -o jogo_memoria
+   
    ```
 3. Compile o arquivo Java
    ```sh
-   C
+   cd gcc jogo_memoria.c -o jogo_memoria
    ```
 4. Execute o arquivo
    ```sh
