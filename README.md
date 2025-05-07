@@ -10,7 +10,7 @@ Jogo da memória em C, onde temos que memorizar os números apresentados pelo pr
    ```
 2. Navegue até o diretório do projeto:
    ```sh
-   cd 
+   cd gcc jogo_memoria.c -o jogo_memoria
    ```
 3. Compile o arquivo Java
    ```sh
