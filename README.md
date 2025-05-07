@@ -5,9 +5,13 @@ Jogo da memória em C, onde temos que memorizar os números apresentados pelo pr
 
 /Memorize
 ├── CLI/
+
 │   ├── cligfx.h
+
 │   └── cliinput.h
+
 ├── ranking.txt
+
 └── jogo_memoria.c
 
 
