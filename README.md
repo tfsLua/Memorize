@@ -3,6 +3,14 @@ Jogo da memória em C, onde temos que memorizar os números apresentados pelo pr
 
 ##Estrutura do projeto:
 
+/Memorize
+├── CLI/
+│   ├── cligfx.h
+│   └── cliinput.h
+├── ranking.txt
+└── jogo_memoria.c
+
+
 
 1. Clone este repositório:
    ```sh
