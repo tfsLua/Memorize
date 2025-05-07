@@ -17,8 +17,8 @@ Jogo da memória em C, onde temos que memorizar os números apresentados pelo pr
    cd gcc jogo_memoria.c -o jogo_memoria
    ```
 4. Execute o arquivo
-   ```sh
-   
+   ```sh 
+   jogo_memoria.c
    ```
 
 
