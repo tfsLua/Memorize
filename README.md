@@ -10,11 +10,16 @@ Jogo da memória em C, onde temos que memorizar os números apresentados pelo pr
 
 **Estrutura do projeto:**
 
-src/: Código-fonte principal.
+incluir
 
-include/cli-lib/: Biblioteca cli-lib.
+fonte
 
-ranking.txt: Arquivo onde os melhores desempenhos são salvos.
+LICENÇA
+
+Makefile
+
+LEIA-ME.md
+
 
 
 **Instruções Compilar e Executar**
