@@ -45,4 +45,3 @@ LEIA-ME.md
 - Priscila Maciel [[@PriscilaMdeLima](https://github.com/PriscilaMdeLima)]
 - Thaissa Fernandes [[@tfsLua](https://github.com/tfsLua)]
 - João Lira [[@joaosanli](https://github.com/joaosanli)]
-- Thomas Barlavento [[@TBDcesar](https://github.com/TBDcesar)]
