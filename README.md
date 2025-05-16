@@ -47,6 +47,7 @@ LEIA-ME.md
 
 ## Fluxo da Mecânica do Jogo
 
+
 1. Início do Jogo
    
 •	O programa inicia com a configuração da tela (screenInit) e do teclado (keyboardInit).
@@ -56,18 +57,21 @@ LEIA-ME.md
 •	O jogador insere seu nome.
 
 
+
 2. Preparação dos Vetores
    
 •	São alocados dois vetores de inteiros com até 100 posições:
 
-o	numeros: guarda a sequência gerada aleatoriamente.
+  *numeros*: guarda a sequência gerada aleatoriamente.
 
-o	resposta: armazena os números digitados pelo jogador.
+  *resposta*: armazena os números digitados pelo jogador.
+  
 
 
 3. Loop Principal do Jogo
    
 O loop principal (while (1)) contém a mecânica central:
+
 
 a)	Geração da Sequência
 
@@ -78,6 +82,7 @@ for (int i = 0; i < qtdNumeros; i++) {
 •	Gera uma sequência aleatória de qtdNumeros valores entre 0 e 99.
 
 •	Para o numero, int, estar entre 0 e 99, o operador % pega o resto da divisão por 100.
+
 
 b)	Exibição para o Jogador
 
@@ -92,9 +97,11 @@ for (int i = 0; i < qtdNumeros; i++) {
     scanf("%d", &resposta[i]);
 }
 
+
 c)	Entrada do Jogador
 
 •	O jogador deve digitar os números na mesma ordem.
+
 
 d)	Verificação da Resposta
 
@@ -115,6 +122,7 @@ o	O número de elementos na próxima rodada aumenta, para aumentar o grau de dif
 •	Se errar, o jogo termina.
 
 
+
 **Ranking de Jogadores**
 
 Após o término:
@@ -125,6 +133,7 @@ Após o término:
 •	salvarRanking(...)
 
 2.	O ranking é exibido com cores diferentes para os 3 primeiros colocados usando screenSetColor.
+
 
 
 **Funções Auxiliares**
@@ -141,6 +150,7 @@ verificarResposta(...)
 carregarRanking(...), salvarRanking(...), atualizarRanking(...)
 
 •	Lida com o carregamento, salvamento e atualização do ranking no arquivo ranking.txt.
+
 
 
 **Resumo da Mecânica**
