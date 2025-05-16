@@ -145,17 +145,16 @@ carregarRanking(...), salvarRanking(...), atualizarRanking(...)
 
 **Resumo da Mecânica**
 
-Etapa	Ação
 
-Início	Jogador digita o nome
+Início - Jogador digita o nome
 
-Rodada	Mostra n números aleatórios
+Rodada - Mostra n números aleatórios
 
-Resposta	Jogador digita os n números na ordem correta
+Resposta	- Jogador digita os n números na ordem correta
 
-Verificação	Se correto, n++ e pontuação aumenta
+Verificação	- Se correto, n++ e pontuação aumenta
 
-Fim	Se errar, exibe pontuação final e ranking atualizado
+Fim	- Se errar, exibe pontuação final e ranking atualizado
 
 
 
