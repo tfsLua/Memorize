@@ -53,7 +53,7 @@ LEIA-ME.md
 
 •	O jogador insere seu nome.
 
-3. Preparação dos Vetores
+2. Preparação dos Vetores
    
 •	São alocados dois vetores de inteiros com até 100 posições:
 
@@ -61,7 +61,7 @@ o	numeros: guarda a sequência gerada aleatoriamente.
 
 o	resposta: armazena os números digitados pelo jogador.
 
-5. Loop Principal do Jogo
+3. Loop Principal do Jogo
    
 O loop principal (while (1)) contém a mecânica central:
 
