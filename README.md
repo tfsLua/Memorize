@@ -44,13 +44,13 @@ LEIA-ME.md
 - Thaissa Fernandes [[@tfsLua](https://github.com/tfsLua)]
 - João Lira [[@joaosanli](https://github.com/joaosanli)]
 
+
 ## Fluxo da Mecânica do Jogo
+
 1. Início do Jogo
    
 •	O programa inicia com a configuração da tela (screenInit) e do teclado (keyboardInit).
-
 •	O ranking de jogadores é carregado do arquivo ranking.txt.
-
 •	O jogador insere seu nome.
 
 2. Preparação dos Vetores
@@ -61,11 +61,12 @@ o	numeros: guarda a sequência gerada aleatoriamente.
 
 o	resposta: armazena os números digitados pelo jogador.
 
+
 3. Loop Principal do Jogo
    
 O loop principal (while (1)) contém a mecânica central:
 
-a. Geração da Sequência
+a)	Geração da Sequência
 
 for (int i = 0; i < qtdNumeros; i++) {
     numeros[i] = rand() % 100;
@@ -75,24 +76,23 @@ for (int i = 0; i < qtdNumeros; i++) {
 
 •	Para o numero, int, estar entre 0 e 99, o operador % pega o resto da divisão por 100.
 
-b. Exibição para o Jogador
+b)	Exibição para o Jogador
 
 mostrarNumeros(numeros, qtdNumeros);
 
 •	Mostra os números por 3 segundos.
 
 •	Limpa a tela e dá 1 segundo antes de pedir as respostas.
-
-c. Entrada do Jogador
-
 for (int i = 0; i < qtdNumeros; i++) {
     printf("Número %d: ", i + 1);
     scanf("%d", &resposta[i]);
 }
 
+c)	Entrada do Jogador
+
 •	O jogador deve digitar os números na mesma ordem.
 
-d. Verificação da Resposta
+d)	Verificação da Resposta
 
 if (verificarResposta(numeros, resposta, qtdNumeros)) {
     // Acertou
@@ -106,7 +106,6 @@ if (verificarResposta(numeros, resposta, qtdNumeros)) {
 •	Se estiver tudo certo:
 
 o	A pontuação é incrementada.
-
 o	O número de elementos na próxima rodada aumenta, para aumentar o grau de dificuldade a cada rodada.
 
 •	Se errar, o jogo termina.
@@ -118,27 +117,23 @@ Após o término:
 
 1.	A pontuação do jogador é salva usando:
    
-o	atualizarRanking(...)
+•	atualizarRanking(...)
+•	salvarRanking(...)
 
-o	salvarRanking(...)
+2.	O ranking é exibido com cores diferentes para os 3 primeiros colocados usando screenSetColor.
 
-3.	O ranking é exibido com cores diferentes para os 3 primeiros colocados usando screenSetColor.
-   
 
 **Funções Auxiliares**
 
 mostrarNumeros(...)
 
 •	Exibe os números gerados.
-
 •	Usa usleep para atrasar a execução, simulando o tempo de memorização.
 
 verificarResposta(...)
 
 •	Compara a sequência digitada com a original.
-
 carregarRanking(...), salvarRanking(...), atualizarRanking(...)
-
 •	Lida com o carregamento, salvamento e atualização do ranking no arquivo ranking.txt.
 
 
@@ -155,5 +150,7 @@ Resposta	Jogador digita os n números na ordem correta
 Verificação	Se correto, n++ e pontuação aumenta
 
 Fim	Se errar, exibe pontuação final e ranking atualizado
+
+
 
 
