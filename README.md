@@ -49,13 +49,13 @@ LEIA-ME.md
 
 
 1. Início do Jogo
-   
+  ```sh  
 •	O programa inicia com a configuração da tela (screenInit) e do teclado (keyboardInit).
 
 •	O ranking de jogadores é carregado do arquivo ranking.txt.
 
 •	O jogador insere seu nome.
-
+  ```
 
 
 2. Preparação dos Vetores
@@ -65,8 +65,7 @@ LEIA-ME.md
   *numeros*: guarda a sequência gerada aleatoriamente.
 
   *resposta*: armazena os números digitados pelo jogador.
-  
-
+ 
 
 3. Loop Principal do Jogo
    
