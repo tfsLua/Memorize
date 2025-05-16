@@ -50,8 +50,11 @@ LEIA-ME.md
 1. Início do Jogo
    
 •	O programa inicia com a configuração da tela (screenInit) e do teclado (keyboardInit).
+
 •	O ranking de jogadores é carregado do arquivo ranking.txt.
+
 •	O jogador insere seu nome.
+
 
 2. Preparação dos Vetores
    
