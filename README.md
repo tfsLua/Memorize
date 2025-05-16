@@ -86,6 +86,7 @@ mostrarNumeros(numeros, qtdNumeros);
 •	Mostra os números por 3 segundos.
 
 •	Limpa a tela e dá 1 segundo antes de pedir as respostas.
+
 for (int i = 0; i < qtdNumeros; i++) {
     printf("Número %d: ", i + 1);
     scanf("%d", &resposta[i]);
@@ -136,7 +137,9 @@ mostrarNumeros(...)
 verificarResposta(...)
 
 •	Compara a sequência digitada com a original.
+
 carregarRanking(...), salvarRanking(...), atualizarRanking(...)
+
 •	Lida com o carregamento, salvamento e atualização do ranking no arquivo ranking.txt.
 
 
