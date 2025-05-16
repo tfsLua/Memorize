@@ -9,7 +9,7 @@ Profº Diego de Freitas
 Jogo da memória em C, onde temos que memorizar os números apresentados pelo programa, e informa-los corretamente quando perguntado, a cada acerto mais um número é adicionado a próxima rodada, o jogo continua sendo executado até o jogador errar, e ao final da rodada o programa apresenta um ranking.
 
 **Estrutura do projeto:**
-
+ ```sh
 incluir
 
 fonte
@@ -20,7 +20,7 @@ Makefile
 
 LEIA-ME.md
 
-
+ ```
 
 **Instruções Compilar e Executar**
 
@@ -59,21 +59,21 @@ LEIA-ME.md
 
 
 2. Preparação dos Vetores
-   
+
+  ```sh  
 •	São alocados dois vetores de inteiros com até 100 posições:
 
   *numeros*: guarda a sequência gerada aleatoriamente.
 
   *resposta*: armazena os números digitados pelo jogador.
- 
-
+ ```
 3. Loop Principal do Jogo
-   
+```sh
 O loop principal (while (1)) contém a mecânica central:
-
+ ```
 
 a)	Geração da Sequência
-
+ ```sh
 for (int i = 0; i < qtdNumeros; i++) {
     numeros[i] = rand() % 100;
 }
@@ -81,10 +81,10 @@ for (int i = 0; i < qtdNumeros; i++) {
 •	Gera uma sequência aleatória de qtdNumeros valores entre 0 e 99.
 
 •	Para o numero, int, estar entre 0 e 99, o operador % pega o resto da divisão por 100.
-
+ ```
 
 b)	Exibição para o Jogador
-
+ ```sh
 mostrarNumeros(numeros, qtdNumeros);
 
 •	Mostra os números por 3 segundos.
@@ -95,15 +95,15 @@ for (int i = 0; i < qtdNumeros; i++) {
     printf("Número %d: ", i + 1);
     scanf("%d", &resposta[i]);
 }
-
+ ```
 
 c)	Entrada do Jogador
-
+ ```sh
 •	O jogador deve digitar os números na mesma ordem.
-
+ ```
 
 d)	Verificação da Resposta
-
+ ```sh
 if (verificarResposta(numeros, resposta, qtdNumeros)) {
     // Acertou
     pontuacao++;
@@ -119,11 +119,11 @@ o	A pontuação é incrementada.
 o	O número de elementos na próxima rodada aumenta, para aumentar o grau de dificuldade a cada rodada.
 
 •	Se errar, o jogo termina.
-
+ ```
 
 
 **Ranking de Jogadores**
-
+ ```sh
 Após o término:
 
 1.	A pontuação do jogador é salva usando:
@@ -132,11 +132,10 @@ Após o término:
 •	salvarRanking(...)
 
 2.	O ranking é exibido com cores diferentes para os 3 primeiros colocados usando screenSetColor.
-
-
+ ```
 
 **Funções Auxiliares**
-
+ ```sh
 mostrarNumeros(...)
 
 •	Exibe os números gerados.
@@ -150,10 +149,10 @@ carregarRanking(...), salvarRanking(...), atualizarRanking(...)
 
 •	Lida com o carregamento, salvamento e atualização do ranking no arquivo ranking.txt.
 
-
+ ```
 
 **Resumo da Mecânica**
-
+ ```sh
 
 Início - Jogador digita o nome
 
@@ -164,7 +163,7 @@ Resposta	- Jogador digita os n números na ordem correta
 Verificação	- Se correto, n++ e pontuação aumenta
 
 Fim	- Se errar, exibe pontuação final e ranking atualizado
-
+ ```
 
 
 
