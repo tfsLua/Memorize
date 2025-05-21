@@ -165,5 +165,76 @@ Verificação	- Se correto, n++ e pontuação aumenta
 Fim	- Se errar, exibe pontuação final e ranking atualizado
  ```
 
+## Descrição da Pontuação no Jogo da Memória
+
+
+No jogo Memorize, a pontuação funciona assim:
+
+•	O jogador inicia com 0 pontos.
+
+•	A cada rodada em que ele acerta a sequência dos números, ele:
+
+   Recebe +1 ponto.
+   
+   A próxima rodada terá um número a mais para memorizar (aumenta grau de dificuldade).
+   
+•	O jogo termina quando o jogador erra a sequência.
+
+•	Ao fim do jogo:
+ 
+   A pontuação final é exibida.
+   
+   A pontuação é salva no ranking dos melhores jogadores (ranking.txt). 
+   
+   O ranking é ordenado de forma decrescente (maiores pontuações no topo).
+   
+   O ranking é exibido com destaque de cores para os 3 primeiros colocados.
+   
+**Implementação da Pontuação:**
+
+1. Variável da pontuação
+   
+  int pontuacao = 0;
+  
+Essa variável armazena a pontuação atual do jogador.
+
+2. Atualização da pontuação a cada acerto
+   
+if (verificarResposta(numeros, resposta, qtdNumeros)) {
+    screenSetColor(GREEN, BLACK);
+    printf("\nCorreto! Próxima rodada...\n");
+    screenSetNormal();
+    pontuacao++;        // <-- Aqui a pontuação é incrementada
+    qtdNumeros++;       // E a dificuldade aumenta
+} else {
+    ...
+}
+
+Se o jogador acerta, ganha +1 ponto e o número de elementos na próxima rodada aumenta (qtdNumeros++), o que torna o jogo mais difícil.
+
+3. Exibição da pontuação final
+   
+printf("\nPontuação final: %d\n", pontuacao);
+
+Quando o jogador erra, o jogo termina e a pontuação acumulada é exibida.
+
+4. Salvamento e atualização do ranking
+
+atualizarRanking(ranking, &totalRanking, nome, pontuacao);
+
+salvarRanking(ranking, totalRanking);
+
+exibirRanking(ranking, totalRanking);
+
+As funções acima:
+
+•	Atualizam a posição do jogador no ranking.
+
+•	Salvam o ranking no arquivo ranking.txt.
+
+•	Mostram o ranking atualizado com cores especiais para os três melhores colocados.
+
+
+
 
 
