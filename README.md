@@ -181,7 +181,8 @@ No jogo Memorize, a pontuação funciona assim:
 •	O jogo termina quando o jogador erra a sequência.
 
 •	Ao fim do jogo:
- 
+  ```
+ ```sh
    A pontuação final é exibida.
    
    A pontuação é salva no ranking dos melhores jogadores (ranking.txt). 
