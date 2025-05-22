@@ -44,7 +44,7 @@
 
 // screen constants
 #define SCRSTARTX      3      // Initial and final screen positions for the game
-#define SCRENDX        75     // It means the area that can be drawn 
+#define SCRENDX        75     // It means the area that can be drawn
 #define SCRSTARTY      1
 #define SCRENDY        23
 
@@ -57,8 +57,8 @@
  * Screen Colors type
 */
 typedef enum {BLACK, RED, GREEN, BROWN, BLUE, MAGENTA, CYAN, LIGHTGRAY,
-        DARKGRAY, LIGHTRED, LIGHTGREEN, YELLOW, LIGHTBLUE, 
-        LIGHTMAGENTA, LIGHTCYAN, WHITE} screenColor; 
+        DARKGRAY, LIGHTRED, LIGHTGREEN, YELLOW, LIGHTBLUE,
+        LIGHTMAGENTA, LIGHTCYAN, WHITE} screenColor;
 
 
 
@@ -96,7 +96,7 @@ static inline void screenClear()
 }
 
 /**
- * Update screen imediatelly 
+ * Update screen imediatelly
 */
 static inline void screenUpdate() {
     fflush(stdout);
@@ -153,7 +153,7 @@ static inline void screenBoxDisable()
 /**
  * Clear the screen, set cursor to home position
  * and optionally draw borders on it.
- * 
+ *
  * @param drawBorders if not zero, draw borders on screen.
 */
 void screenInit(int drawBorders);
@@ -167,12 +167,12 @@ void screenDestroy();
  * Move cursor to position (x,y)
  * @param x x position
  * @param y y position
- */ 
+ */
 
 void screenGotoxy(int x, int y);
 
 /**
- * Define text colors 
+ * Define text colors
  * @param fg foreground color, can assume values from BLACK to WHITE
  * @param bg background color, can assume values from BLACK to LIGHTGRAY
 */

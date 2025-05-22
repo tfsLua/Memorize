@@ -11,7 +11,7 @@ clean:
 	rm -f $(OUT)
 
 #project name
-PROJ_NAME = cli-lib-example
+PROJ_NAME = memorize
 
 # Target directories
 BUILD_DIR   = build
@@ -46,4 +46,4 @@ clean:
 
 # Run target
 run: all
-	./$(BUILD_DIR)/cli-lib-example
+	./$(BUILD_DIR)/memorize

@@ -2,11 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <string.h>
-#include <unistd.h> 
-#include "../include/screen.h"
-#include "../include/keyboard.h"
-#include "../include/timer.h"
-
+#include <unistd.h>
+#include "../include/cli-lib/screen.h"
+#include "../include/cli-lib/keyboard.h"
+#include "../include/cli-lib/timer.h"
 
 #define MAX_NUMS 100
 #define MAX_NOME 20
@@ -26,9 +25,9 @@ void mostrarNumeros(int *numeros, int qtd) {
         printf("%d ", numeros[i]);
     printf("\n");
 
-    usleep(3000 * 1000);    // Pausa de 3 segundos (in microseconds)
-    screenClear();        // Limpa a tela
-    usleep(1000 * 1000);    // Pausa de 1 segundo (in microseconds)
+    usleep(3000 * 1000);
+    screenClear();
+    usleep(1000 * 1000);
     printf("Digite os números na ordem correta:\n\n");
 }
 
@@ -68,8 +67,8 @@ void carregarRanking(Jogador *ranking, int *total) {
 
 void atualizarRanking(Jogador *ranking, int *total, char *nome, int pontuacao) {
     Jogador novo;
-    strncpy(novo.nome, nome, MAX_NOME - 1); 
-    novo.nome[MAX_NOME - 1] = '\0'; 
+    strncpy(novo.nome, nome, MAX_NOME - 1);
+    novo.nome[MAX_NOME - 1] = '\0';
     novo.pontuacao = pontuacao;
 
     int i;
@@ -89,28 +88,28 @@ void exibirRanking(Jogador *ranking, int total) {
 
     for (int i = 0; i < total; i++) {
         if (i == 0) {
-            screenSetColor(CYAN, BLACK); 
+            screenSetColor(CYAN, BLACK);
         } else if (i == 1) {
-            screenSetColor(GREEN, BLACK); 
+            screenSetColor(GREEN, BLACK);
         } else if (i == 2) {
-            screenSetColor(YELLOW, BLACK); 
+            screenSetColor(YELLOW, BLACK);
         } else {
             screenSetColor(WHITE, BLACK);
         }
-        
+
         printf("%d. %s - %d\n", i + 1, ranking[i].nome, ranking[i].pontuacao);
     }
 
-    screenSetNormal(); // Reset colors
+    screenSetNormal();
     printf("\nPressione Enter para continuar...");
-    getchar(); 
-    getchar(); 
+    getchar();
+    getchar();
 }
 
 int main() {
     srand(time(NULL));
-    screenInit(1); 
-    keyboardInit(); 
+    screenInit(1);
+    keyboardInit();
 
     Jogador ranking[MAX_RANK];
     int totalRanking;
@@ -147,24 +146,24 @@ int main() {
         }
 
         if (verificarResposta(numeros, resposta, qtdNumeros)) {
-            screenSetColor(GREEN, BLACK); 
+            screenSetColor(GREEN, BLACK);
             printf("\nCorreto! Próxima rodada...\n");
-            screenSetNormal(); 
+            screenSetNormal();
             pontuacao++;
             qtdNumeros++;
         } else {
             screenSetColor(RED, BLACK);
             printf("\nErrado! Fim de jogo.\n");
-            screenSetNormal(); 
+            screenSetNormal();
             break;
         }
 
         printf("\nPressione Enter para continuar...");
-        getchar(); 
-        getchar(); 
+        getchar();
+        getchar();
     }
 
-    screenSetColor(YELLOW, BLACK); 
+    screenSetColor(YELLOW, BLACK);
     printf("\nPontuação final: %d\n", pontuacao);
     screenSetNormal();
 
@@ -174,8 +173,8 @@ int main() {
 
     free(numeros);
     free(resposta);
-    screenDestroy(); 
-    keyboardDestroy(); 
+    screenDestroy();
+    keyboardDestroy();
 
     return 0;
 }
