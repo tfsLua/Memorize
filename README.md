@@ -49,6 +49,7 @@ LEIA-ME.md
 
 
 
+
 ## Fluxo da Mecânica do Jogo
 
 
