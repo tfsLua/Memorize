@@ -43,6 +43,10 @@ LEIA-ME.md
 - Priscila Maciel [[@PriscilaMdeLima](https://github.com/PriscilaMdeLima)]
 - Thaissa Fernandes [[@tfsLua](https://github.com/tfsLua)]
 - João Lira [[@joaosanli](https://github.com/joaosanli)]
+  
+
+## Implementação da Mecânica e Pontuação do Jogo [Descrição e Implementação da Mecânica e Pontuação do Jogo.docx](https://github.com/user-attachments/files/20393788/Descricao.e.Implementacao.da.Mecanica.e.Pontuacao.do.Jogo.docx)
+
 
 
 ## Fluxo da Mecânica do Jogo
