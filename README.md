@@ -31,11 +31,11 @@ LEIA-ME.md
    ```
 2. Compile o arquivo
    ```sh
-   cd gcc jogo_memoria.c -o jogo_memoria
+   make
    ```
 3. Execute o arquivo
    ```sh 
-   jogo_memoria.c
+   make run
    ```
 
 ## Autores
