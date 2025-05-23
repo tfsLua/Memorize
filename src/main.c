@@ -109,7 +109,7 @@ void exibirRanking(Jogador *ranking, int total) {
 
 int main() {
     srand(time(NULL));
-    // screenInit(1);
+    screenClear();
     keyboardInit();
 
     Jogador ranking[MAX_RANK];
