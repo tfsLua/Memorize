@@ -53,6 +53,7 @@ LEIA-ME.md
 
 [Descrição e Implementação da Mecânica e Pontuação do Jogo.docx](https://github.com/user-attachments/files/20393978/Descricao.e.Implementacao.da.Mecanica.e.Pontuacao.do.Jogo.docx)
 
+[Slide](https://docs.google.com/presentation/d/1l3QpF1op5HkBknQRI2uvsEfQsfR_9mnbg_lMpRu1w40/edit?slide=id.p1#slide=id.p1)
 
 
 
