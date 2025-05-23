@@ -3,9 +3,10 @@
 #include <time.h>
 #include <string.h>
 #include <unistd.h>
-#include "../include/cli-lib/screen.h"
-#include "../include/cli-lib/keyboard.h"
-#include "../include/cli-lib/timer.h"
+
+#include "screen.h"
+#include "keyboard.h"
+#include "timer.h"
 
 #define MAX_NUMS 100
 #define MAX_NOME 20
@@ -108,7 +109,7 @@ void exibirRanking(Jogador *ranking, int total) {
 
 int main() {
     srand(time(NULL));
-    screenInit(1);
+    // screenInit(1);
     keyboardInit();
 
     Jogador ranking[MAX_RANK];
